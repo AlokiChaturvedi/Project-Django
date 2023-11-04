@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block title %}
+Home|
+{% endblock title %}
+{% block body %}
+<div class="container-fluid px-0" ><div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://media.istockphoto.com/id/1411478246/photo/middle-eastern-college-student-talking-to-her-friend-in-a-hallway.jpg?s=2048x2048&w=is&k=20&c=dbkbIA0v0WfNrynvBi47XXC77ZE7ZOVltUSvB1OI2gc=" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://media.istockphoto.com/id/1435220822/photo/african-american-software-developer.jpg?s=2048x2048&w=is&k=20&c=d1UoAVikBSCBACAx6VowheFeZQbmJymYjqQKQeK48jI=" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://media.istockphoto.com/id/1438553832/photo/scientists-team-collect-water-samples-for-analysis-and-research-on-water-quality-environment.jpg?s=612x612&w=0&k=20&c=zs27PBk-tzvyQjqOJeN8Oy-Q2uKIfR3aBLQL7E7XYZI=" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+{% endblock body %}

@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% block title %}
+Contact|
+{% endblock title %}
+{% block body %}
+<div class="container-fluid pc-0">
+    <img src="https://th.bing.com/th/id/R.2b8984f4ca165809d66feb2b7c54a624?rik=dxdp5WwpHviDeA&amp;riu=http%3a%2f%2fwww.mouscron-centre.be%2fimages%2fcontact-us.jpg&amp;ehk=nI0qAwV68pY6A167RqivYl7CP85Yvb5HSyE9ClD%2f%2fZA%3d&amp;risl=&amp;pid=ImgRaw&amp;r=0" style="
+    padding: inherit;
+    position: relative;
+    top: 5px;
+    size: landscape;
+    right: 5px;
+    /* left: 5px; */
+    height: 141px;
+    width: 1520px;
+">
+
+<h2 style="
+    position: absolute;
+    top: 64px;
+    left: 60px;
+"> Contact Us</h2>
+</div>
+<h4>
+<form method="post" action="/contact"
+style="
+position: absolute;
+top: 217px;
+left: 415px;
+width: 705px;
+">
+{% csrf_token %}
+<div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Name</label>
+    <input type="text" class="form-control" id="exampleInputPassword1" name="name">
+  </div>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="email" name="email"aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+
+    <div class="mb-3">
+      <label for="contact" class="form-label">Phone No.</label>
+      <input type="phone2numeric" class="form-control" id="contact" name="phone"aria-describedby="emailHelp">
+      <div id="phone" class="form-text">We'll never share your contact info with anyone else.</div>
+    </div>
+    
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</h4>
+
+
+
+
+{% endblock body %}
